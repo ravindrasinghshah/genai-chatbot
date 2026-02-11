@@ -1,0 +1,43 @@
+{
+  "name": "chat-app",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint",
+    "sanitize:data": "node scripts/sanitize_stock_news.js",
+    "build:index": "tsx lib/index_docs.ts",
+    "test": "vitest",
+    "test:coverage": "vitest run --coverage"
+  },
+  "dependencies": {
+    "@langchain/community": "^1.1.13",
+    "@langchain/core": "^1.1.20",
+    "@langchain/openai": "^1.2.6",
+    "dotenv": "^16.4.7",
+    "hnswlib-node": "^3.0.0",
+    "jose": "^5.9.4",
+    "langchain": "^1.2.19",
+    "lucide-react": "^0.563.0",
+    "next": "16.1.6",
+    "react": "19.2.3",
+    "react-dom": "19.2.3",
+    "react-toastify": "^11.0.5",
+    "uuid": "^13.0.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "16.1.6",
+    "tailwindcss": "^4",
+    "vitest": "^2.1.5",
+    "@vitest/coverage-v8": "^2.1.5",
+    "tsx": "^4.19.2",
+    "typescript": "^5"
+  }
+}
