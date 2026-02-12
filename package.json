@@ -10,7 +10,11 @@
     "sanitize:data": "node scripts/sanitize_stock_news.js",
     "build:index": "tsx lib/index_docs.ts",
     "test": "vitest",
-    "test:coverage": "vitest run --coverage"
+    "test:coverage": "vitest run --coverage",
+    "postinstall": "npm rebuild hnswlib-node --build-from-source"
+  },
+  "engines": {
+    "node": "20.x"
   },
   "dependencies": {
     "@langchain/community": "^1.1.13",
