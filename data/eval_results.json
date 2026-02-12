@@ -1,0 +1,23 @@
+[
+  {
+    "question": "What did Apple announce about its in-house modem?",
+    "grounded": true,
+    "hallucinationCount": 0,
+    "missingInfo": false,
+    "score": 5
+  },
+  {
+    "question": "What is the SWE-Lancer benchmark?",
+    "grounded": true,
+    "hallucinationCount": 0,
+    "missingInfo": false,
+    "score": 5
+  },
+  {
+    "question": "What is Apple's market share in smart speakers?",
+    "grounded": false,
+    "hallucinationCount": 1,
+    "missingInfo": true,
+    "score": 1
+  }
+]

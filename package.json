@@ -9,6 +9,7 @@
     "lint": "eslint",
     "sanitize:data": "node scripts/sanitize_stock_news.js",
     "build:index": "tsx lib/index_docs.ts",
+    "eval:rag": "tsx scripts/eval_rag.ts",
     "test": "vitest",
     "test:coverage": "vitest run --coverage",
     "postinstall": "npm rebuild hnswlib-node --build-from-source"

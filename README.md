@@ -98,6 +98,16 @@ npm run build:index
 npm run test
 ```
 
+### Offline Evaluation (RAG Judge)
+
+Provide samples in `data/eval_samples.json`, then run:
+
+```bash
+npm run eval:rag
+```
+
+This writes a summary to `data/eval_results.json`.
+
 ### Project Structure (Quick Map)
 
 - `app/` - Next.js routes and API handlers

@@ -1,0 +1,17 @@
+[
+  {
+    "question": "What did Apple announce about its in-house modem?",
+    "context": "Apple plans to launch a new product on February 19, which will include Apple Intelligence, the A18 chip, and its first in-house cellular modem.",
+    "answer": "Apple announced a new product for February 19 that will include Apple Intelligence, the A18 chip, and its first in-house cellular modem."
+  },
+  {
+    "question": "What is the SWE-Lancer benchmark?",
+    "context": "Microsoft-backed OpenAI introduced SWE-Lancer, a benchmark of more than 1,400 tasks for evaluating software engineering agents.",
+    "answer": "SWE-Lancer is a benchmark introduced by OpenAI with over 1,400 tasks for evaluating software engineering agents."
+  },
+  {
+    "question": "What is Apple's market share in smart speakers?",
+    "context": "Apple plans to launch a new product on February 19 with Apple Intelligence and an in-house modem.",
+    "answer": "Apple holds 35% of the smart speaker market."
+  }  
+]
