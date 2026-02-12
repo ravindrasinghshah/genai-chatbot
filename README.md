@@ -111,7 +111,7 @@ npm run test
 - `scripts/` - data sanitization script
 - `tests/` - Vitest tests
 
-### Architecture (Mermaid)
+### Architecture
 
 ```mermaid
 flowchart TB
