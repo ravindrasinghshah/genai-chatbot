@@ -110,3 +110,27 @@ npm run test
   - `vector_store/` - vector DB adapter + client
 - `scripts/` - data sanitization script
 - `tests/` - Vitest tests
+
+### Architecture (Mermaid)
+
+```mermaid
+flowchart TB
+  UI[UI: React / Next.js App Router] -->|Login| LoginAPI[POST /api/login]
+  UI -->|Logout| LogoutAPI[POST /api/logout]
+  UI -->|Ask Question SSE| ChatAPI[POST /api/chat/:identifier]
+
+  LoginAPI --> JWT[JWT Signer]
+  JWT --> Cookie[HttpOnly access_token cookie]
+
+  ChatAPI --> Auth[Auth Guard JWT verify]
+  ChatAPI --> Injection[Prompt Injection Check]
+  ChatAPI --> Vector[Vector Store Client]
+  Vector --> HNSW[HNSWLib Vector DB]
+  HNSW --> Data[(data/vector_db)]
+  ChatAPI --> LLM[LLM Client]
+  LLM --> OpenAI[OpenAI Chat Model]
+  ChatAPI -->|SSE tokens| UI
+
+  Scripts[Sanitize + Index Scripts] --> DataFiles[(data/stock_news*.json)]
+  Scripts --> HNSW
+```
