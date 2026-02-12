@@ -31,6 +31,7 @@ interface ChatResponse {
 
 const vectorStoreClient = getVectorStoreClient();
 const llmClient = getLlmClient();
+export const runtime = "nodejs";
 
 const isRequestValid = (identifier: string, question: string) => {
   if (!identifier) {
