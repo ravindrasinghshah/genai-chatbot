@@ -1,6 +1,6 @@
 ## Overview
 
-This is a small chat application that answers questions about recent financial news using a local vector database built from `data/stock_news.json`.
+The GenAI chabot application that answers questions about recent financial news using a local vector database built from `data/stock_news.json`.
 It uses LangChain + OpenAI for embeddings and response generation, and streams responses to the UI.
 
 ### Technologies
